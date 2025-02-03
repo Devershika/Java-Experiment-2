@@ -1,6 +1,4 @@
 # Arrays
-This repository consist of array and basic operation formed on arrays
-
 ## Description
 
 This Java program provides functionalities for working with arrays, including separating even and odd numbers and finding the smallest distance between neighboring elements.
