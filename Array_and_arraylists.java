@@ -26,3 +26,20 @@ public class ArrayFunctions {
         }
         System.out.println();
     }
+
+    public static int findSmallestDistance(int[] numbers) {
+        int minDistance = Integer.MAX_VALUE;
+        int index = -1;
+
+        // Loop to find the pair with the smallest distance
+        for (int i = 0; i < numbers.length - 1; i++) {
+            int distance = Math.abs(numbers[i] - numbers[i + 1]);
+            if (distance < minDistance) {
+                minDistance = distance;
+                index = i;
+            }
+        }
+
+        return index;  // Return the index of the first number
+    }
+}
