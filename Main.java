@@ -23,3 +23,20 @@ public class Main {
         System.out.println("1. Separate even and odd numbers");
         System.out.println("2. Find the two neighboring numbers with the smallest distance");
         int choice = sc.nextInt();
+
+        // Switch case for function selection
+        switch (choice) {
+            case 1:
+                ArrayFunctions.separateEvenOdd(numbers);  
+                break;
+            case 2:
+                int index = ArrayFunctions.findSmallestDistance(numbers);
+                System.out.println("The index of the first number with the smallest distance is: " + index);
+                break;
+            default:
+                System.out.println("Invalid choice!");
+        }
+
+        sc.close();
+    }
+}
